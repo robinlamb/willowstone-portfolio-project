@@ -1,0 +1,434 @@
+:root {
+    --forest: #1D3326;
+    --sage: #829B79;
+    --sage-light: #DDE6D8;
+
+    --tan: #9A7048;
+    --tan-light: #D0AD82;
+    --tan-dark: #765234;
+    --tan-active: #5E4029;
+    --tan-pale: #f5eadc;
+
+    --ivory: #F7F5EF;
+    --text-dark: #263029;
+}
+
+.navbar {
+    background-color: var(--forest);
+    color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    padding: .5rem 2rem;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar .nav-link:hover {
+    color: var(--tan-light);
+}
+
+.navbar .nav-link:active {
+     color: var(--tan);
+}
+
+.willowstone-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.willowstone-logo-footer {
+    width: 100px;
+    height: auto;
+}
+
+.logo-footer-container {
+    text-align: center;
+    padding-top: 1em;
+    padding-right:7em;    
+}
+
+@media (max-width: 767.98px) {
+    .logo-footer-container {
+        padding-right: 0;
+    }
+}
+
+.btn-willowstone {
+    background-color: var(--tan-dark);
+    color: #FFFFFF;
+    border: 2px solid white;
+    margin-top: 2em;
+
+}
+
+@media (max-width: 767.98px) {
+    .btn-willowstone {
+        margin-top: 0;
+    }
+}
+
+.btn-willowstone:hover {
+    background-color: var(--tan);
+    border-color: var(--tan);
+    color: white;
+}
+
+.btn.btn-willowstone:active {
+    background-color: var(--tan-active);
+    border-color: var(--tan-active);
+}
+
+
+.willowstone-footer {
+    background-color: var(--forest);
+    color:white;  
+    padding: 2rem 2rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.willowstone-footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.willowstone-footer .container {
+    padding-bottom: 1.5rem;
+}
+
+.services, .summary {
+    padding: 5rem 3rem;
+}
+
+
+@media (max-width: 767.98px) {
+    .services,
+    .summary {
+        padding: 3rem 1rem;
+    }
+}
+.card {
+    background-color: var(--tan-pale);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.card:hover {
+    background-color: var(--tan-dark);
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.card:active {
+    background-color: var(--tan-active);
+    transform: translateY(-1px) scale(0.99);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);
+}
+
+.willowstone-footer a:hover {
+    color: var(--tan-light);
+}
+
+.willowstone-footer a:active {
+    color: var(--tan);
+}
+
+#carouselWillowstone {
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    text-align: center;
+    color: white;
+}
+
+
+.carousel-item {
+    position: relative;
+}
+
+.summary h1 {
+    margin-bottom: 4rem
+}
+
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h1 {
+    line-height:.7;
+    margin-bottom: 2rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+@media (max-width: 767.98px) {
+    .hero-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+        line-height: .2rem;
+    }
+}
+
+
+.hero-line-1, .hero-line-2, .hero-content .btn-willowstone { 
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+
+.hero-line-1 {
+    animation-delay: 0.2s;
+}
+
+.hero-line-2 {
+     animation-delay: 1.5s;
+}
+
+.hero-content .btn-willowstone {
+    animation-delay: 2.5s;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.carousel-indicators {
+    list-style: none;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand, .btn-willowstone {
+    font-family: "DM Serif Display", serif;
+}
+
+.footer-list {
+    margin-left: .5rem;
+    line-height: .5rem;
+}
+
+.willowstone-contact {
+    padding-bottom: .5rem;
+}
+
+.service-hero {
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-hero-mobile {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+
+    .service-hero {
+        min-height: auto;
+        background-image: none;
+        background-attachment: scroll;
+    }
+
+    .service-hero-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.landscape-hero {
+    background-image: url("../images/landscape-hero.jpg")
+}
+
+.stonework-hero {
+    background-image: url("../images/stonework-hero.jpg");
+}
+
+.waterworks-hero {
+    background-image: url("../images/pond-hero.jpg");
+}
+
+.service-hero {
+    position: relative;
+}
+
+.about-hero-wrap {
+    position: relative;
+}
+
+.about-hero {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    filter: brightness(55%);
+}
+
+
+.service-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.service-hero-content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.service-hero-content h1 {
+    font-size: 3.5rem;
+    padding-top: 5rem;
+}
+
+@media (max-width: 767.98px) {
+    .service-hero-content h1 {
+    font-size: 2rem;
+    
+    }
+
+}
+
+
+
+.service-content h1, .service-content h3, .service-content h4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.service-content h1, .service-content h3, .service-content h4, .service-content p {
+    padding-left: 3rem;
+    padding-right:3rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 767.98px) {
+    .service-content h1, .service-content h3, .service-content h4, .service-content p {
+    padding-left: 1rem;
+    padding-right:1rem;
+}
+}
+.service-content p, .service-content a {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.return-to-services {
+    color:black;
+    text-align:center;
+    display:block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-error {
+    color: #a12b2b;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.quote-page {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.form-control {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 767.98px) {
+   .quote-page {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+} 
+}
+
+.quote-page .btn-willowstone {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.success-message {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.success-message .h2, .success-message .p {
+    padding-bottom: 5rem;
+}
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.dm-sans-<uniquifier> {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}

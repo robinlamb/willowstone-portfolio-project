@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Willowstone Landscaping</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/willowstone-styles.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <a class="navbar-brand" href="#"> <img src="../images/willowstone-logo.svg"
+         class="willowstone-logo"
+         alt="">Willowstone Landscaping</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="../index.html">Home</a>
+      <a class="nav-item nav-link" href="../index.html#service-section">Our Services</a>
+      <a class="nav-item nav-link" href="../pages/about-us.html">About Us</a>
+      <a class="nav-item nav-link" href="../pages/request-quote-form.html">Request a Quote</a>
+    </div>
+  </div>
+</nav>
+
+<form id="quote-form" class="quote-page" novalidate>
+   <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+         <input type="text"
+           class="form-control"
+           id="name"
+           name="name"
+           required>
+
+         <div class="form-error hidden" id="name-error">
+          Please enter your name.
+          </div>
+        </div>
+
+     <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+
+        <input type="email"
+           class="form-control"
+           id="email"
+           name="email"
+           required>
+
+        <div class="form-error hidden" id="email-error">
+          Please enter a valid email address.
+        </div>
+       </div>
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="mb-3">
+        <label for="phone" class="form-label">Telephone:</label>
+        <input type="tel"
+          class="form-control"
+          id="phone"
+          name="phone"
+          pattern="\(?[0-9]{3}\)?(?:\s|-|\.)?[0-9]{3}(?:\s|-|\.)?[0-9]{4}"
+          required>
+
+      <div class="form-error hidden" id="phone-error">
+        Please enter a valid 10-digit telephone number.
+      </div>
+    </div>
+    </div>
+  </div>
+  
+<div class="row">
+    <div class="col-12">
+      <div class="mb-3">
+      <div class="mb-3">
+       <label for="project" class="form-label">
+         Tell Us About Your Project
+         </label>
+
+        <textarea
+          class="form-control"
+          id="project"
+          name="project"
+          rows="6"
+          placeholder="Tell us about your space, what you'd like to change, and any ideas you have in mind."
+          required></textarea>
+          <div class="form-error hidden" id="project-error">
+            Please tell us about your project.
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="submit" class="btn btn-willowstone">
+    Request a Quote
+</button>
+</form>
+
+<div id="form-success" class="hidden container quote-page success-message">
+    <h2>Form Received!</h2>
+    <p>
+        This is a portfolio demonstration for a fictional company.
+        No information was submitted or stored.
+    </p>
+     <a class="return-to-services" href="../index.html">Back to Home</a>
+</div>
+
+<footer class="willowstone-footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 col-md-4 logo-footer-container">
+                <h4>Willowstone Landscaping</h4>
+                <img src="../images/willowstone-logo.svg" class="willowstone-logo-footer" alt="Willowstone Logo">
+            </div>
+
+            <div class="col-12 col-md-4 py-3">
+                <h4>Quick Links</h4>
+                <a class="footer-list" href="../index.html">Home</a><br>
+                <a class="footer-list" href="../pages/about-us.html">About Us</a><br>
+                <a class="footer-list" href="../index.html#service-section">Services</a><br>
+                <a class="footer-list" href="../pages/request-quote-form.html">Request a Quote</a>
+            </div>
+
+            <div class="col-12 col-md-4 py-3">
+                <h4 class="willowstone-contact">Contact</h4>
+                <p class="footer-list">123 Willow Lane</p>
+                <p class="footer-list">Somewhere, USA</p>
+                <p class="footer-list">(555) 555-1234</p>
+            </div>
+
+        </div>
+    </div>
+    <p>Demonstation for Robin Lamb's portfolio. This is a fictional company.</p>
+</footer>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/willowstone-script.js"></script>
+</body>
+</html>
