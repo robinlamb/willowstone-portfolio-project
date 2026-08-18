@@ -25,9 +25,7 @@
     color: white;
 }
 
-.navbar .nav-link:hover {
-    color: var(--tan-light);
-}
+
 
 .navbar .nav-link:active {
      color: var(--tan);
@@ -145,8 +143,14 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);
 }
 
-.willowstone-footer a:hover {
-    color: var(--tan-light);
+@media (hover: hover) and (pointer: fine) {
+    .navbar .nav-link:hover {
+        color: var(--tan-light);
+    }
+
+    .willowstone-footer a:hover {
+        color: var(--tan-light);
+    }
 }
 
 .willowstone-footer a:active {
@@ -303,15 +307,15 @@ h6,
 }
 
 .landscape-hero {
-    background-image: url("../images/landscape-hero.jpg")
+    background-image: url("../images/landscape-hero.webp")
 }
 
 .stonework-hero {
-    background-image: url("../images/stonework-hero.jpg");
+    background-image: url("../images/stonework-hero.webp");
 }
 
 .waterworks-hero {
-    background-image: url("../images/pond-hero.jpg");
+    background-image: url("../images/pond-hero.webp");
 }
 
 .service-hero {
