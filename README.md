@@ -1,2 +1,2 @@
-# willowstone-portfolio-project
+# Willowstone Landscaping Portfolio Project
 Willowstone web design portfolio project
